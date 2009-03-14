@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>WysiHat API documentation | Home</title>
+	  <meta name="generator" content="PDoc" />
+	  
+	  <script charset="utf-8" type="text/javascript" src="javascripts/prototype.js"></script>
+<script charset="utf-8" type="text/javascript" src="javascripts/effects.js"></script>
+<script charset="utf-8" type="text/javascript" src="javascripts/controls.js"></script>
+	  <script charset="utf-8" type="text/javascript" src="javascripts/application.js"></script>
+<script charset="utf-8" type="text/javascript" src="javascripts/code_highlighter.js"></script>
+
+	  <script charset="utf-8" type="text/javascript" src="javascripts/item_index.js"></script>
+	  
+	  
+	  <link charset="utf-8" type="text/css" media="screen, projection" rel="stylesheet" href="stylesheets/screen.css" />
+<link charset="utf-8" type="text/css" media="screen, projection" rel="stylesheet" href="stylesheets/grid.css" />
+<link charset="utf-8" type="text/css" media="screen, projection" rel="stylesheet" href="stylesheets/highlighter.css" />
+<link charset="utf-8" type="text/css" media="screen, projection" rel="stylesheet" href="stylesheets/main.css" />
+	  
+	  <script type="text/javascript" charset="utf-8">
+	    function menuButtonMouseOver(event) {
+	      var menuButton = $('api_menu_button');
+	      var target = event.element();
+	      if (target === menuButton || target.descendantOf(menuButton)) {
+	        $('api_menu').show();
+	        $('search').focus();
+	      }
+	    }
+	    
+	    function menuButtonMouseOut(event) {
+	      var menuButton = $('api_menu_button');
+	      var menu = $('api_menu');
+	      var target = event.element(), related = event.relatedTarget;
+	      
+	      if (related === menu || related.descendantOf(menu)) return;
+	      menu.hide();
+	    }
+	    
+	    function menuMouseOut(event) {
+	      var menu = $('api_menu'), related = event.relatedTarget;
+	      if (related && !related.descendantOf(menu)) {
+	        arguments.callee.timer = Element.hide.delay(0.5, menu);
+	      } else {
+	        window.clearTimeout(arguments.callee.timer)
+	      }
+	    }
+	    
+	    document.observe('dom:loaded', function() {
+   	    $('api_menu_button').observe('mouseover', menuButtonMouseOver);
+   	    $('api_menu_button').observe('mouseout',  menuButtonMouseOut);
+   	    
+   	    $('api_menu').observe('mouseout', menuMouseOut);
+	    });
+	  </script>
+	  
+	  <script type="text/javascript" charset="utf-8">PDoc.pathPrefix = '';</script>
+  </head>
+  <body class="">
+    <div id="page">
+      <div id="links_wrapper">
+        <div id="links">
+          <ul id="internal_links">
+            <li class="selected"><a href="#">Home</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Weblog</a></li>
+          </ul>
+          <ul id="external_links">
+            <li id="scripty_link"><a href="http://script.aculo.us/">script.aculo.us</a></li>
+            <li id="rails_link"><a href="http://www.rubyonrails.org/">Ruby on Rails</a></li>
+          </ul>
+        </div> <!-- #links -->
+      </div> <!-- #links_wrapper -->
+      
+      <div id="masthead">
+        <div id="masthead_content">
+          <h1 onclick="with (document.body) className = className ? '' : 'grid'" id="logo"><span>WysiHat JavaScript framework</span></h1>
+        </div> <!-- #masthead_content -->
+      </div> <!-- #masthead -->
+      
+      <div id="menu">
+        <div class="api-box">
+          <h2><a href="#" id="api_menu_button">Menu &darr;</a></h2>
+          
+    			<ul id="api_menu" class="menu-items" style="display: none">
+    				
+    					<li><a class=" section" title="dom section (section)" href="dom.html#dom_section-section">dom section</a><ul><li><a class=" class" title="Range (class)" href="dom/range.html"><code>Range</code></a><ul></ul></li></ul></li>
+    				
+    					<li><a class=" section" title="lang section (section)" href="lang.html#lang_section-section">lang section</a><ul><li><a class=" class" title="String (class)" href="lang/string.html"><code>String</code></a><ul></ul></li>
+<li><a class=" class" title="String (class)" href="lang/string.html"><code>String</code></a><ul></ul></li></ul></li>
+    				
+    					<li><a class=" section" title="wysihat section (section)" href="wysihat.html#wysihat_section-section">wysihat section</a><ul><li><a class=" namespace" title="WysiHat (namespace)" href="wysihat/wysihat.html"><code>WysiHat</code></a><ul><li><a class=" mixin" title="WysiHat.Commands (mixin)" href="wysihat/wysihat/commands.html"><code>WysiHat.Commands</code></a><ul></ul></li>
+<li><a class=" namespace" title="WysiHat.Editable (namespace)" href="wysihat/wysihat/editable.html"><code>WysiHat.Editable</code></a><ul><li><a class=" mixin" title="WysiHat.Editable.Methods (mixin)" href="wysihat/wysihat/editable/methods.html"><code>WysiHat.Editable.Methods</code></a><ul></ul></li></ul></li>
+<li><a class=" namespace" title="WysiHat.Editor (namespace)" href="wysihat/wysihat/editor.html"><code>WysiHat.Editor</code></a><ul></ul></li>
+<li><a class=" mixin" title="WysiHat.Events (mixin)" href="wysihat/wysihat/events.html"><code>WysiHat.Events</code></a><ul></ul></li>
+<li><a class=" mixin" title="WysiHat.Persistence (mixin)" href="wysihat/wysihat/persistence.html"><code>WysiHat.Persistence</code></a><ul></ul></li>
+<li><a class=" class" title="WysiHat.Selection (class)" href="dom/wysihat/selection.html"><code>WysiHat.Selection</code></a><ul></ul></li>
+<li><a class=" class" title="WysiHat.Toolbar (class)" href="wysihat/wysihat/toolbar.html"><code>WysiHat.Toolbar</code></a><ul><li><a class=" namespace" title="WysiHat.Toolbar.ButtonSets (namespace)" href="wysihat/wysihat/toolbar/buttonsets.html"><code>WysiHat.Toolbar.ButtonSets</code></a><ul><li><a class=" namespace" title="WysiHat.Toolbar.ButtonSets.Basic (namespace)" href="wysihat/wysihat/toolbar/buttonsets/basic.html"><code>WysiHat.Toolbar.ButtonSets.Basic</code></a><ul></ul></li></ul></li></ul></li>
+<li><a class=" mixin" title="WysiHat.Window (mixin)" href="wysihat/wysihat/window.html"><code>WysiHat.Window</code></a><ul></ul></li>
+<li><a class=" namespace" title="WysiHat.iFrame (namespace)" href="wysihat/wysihat/iframe.html"><code>WysiHat.iFrame</code></a><ul><li><a class=" mixin" title="WysiHat.iFrame.Methods (mixin)" href="wysihat/wysihat/iframe/methods.html"><code>WysiHat.iFrame.Methods</code></a><ul></ul></li></ul></li></ul></li></ul></li>
+    				
+    			</ul>          
+        </div> <!-- .api-box -->
+
+        <div class="search-box">
+  			  <form>
+    			  <label>Search <input type="text" id="search" size="20" /></label>
+  			  </form>
+  			  <ul id="search_results" class="search-results menu-items" style="display:none"></ul>
+        </div> <!-- .search-box -->
+
+      </div> <!-- #menu -->
+      
+      <div id="main">
+        
+        
+
+<div class="section">
+  <h1>WysiHat</h1>
+
+<h4>A WYSIWYG JavaScript framework</h4>
+
+<p>WysiHat is a WYSIWYG JavaScript framework that provides an extensible
+foundation to design your own rich text editor. WysiHat stays out of your
+way and leaves the UI design to you.</p>
+
+<h3>Support platforms</h3>
+
+<p>WysiHat currently supports:</p>
+
+<ul>
+<li>Microsoft Internet Explorer for Windows, version 6.0 and higher</li>
+<li>Mozilla Firefox 2.0 and higher</li>
+<li>Apple Safari 3.0 and higher</li>
+<li>Opera 9.52 and higher</li>
+<li>Google Chrome</li>
+</ul>
+
+<h3>Dependencies</h3>
+
+<ul>
+<li>Prototype 1.6 or later (http://prototypejs.org/)</li>
+</ul>
+
+<h2>Documentation</h2>
+
+<p>Code is documented inline with PDoc (http://pdoc.org/).</p>
+
+<p>The generated HTML documentation can be found on the <code>gh-pages</code> branch or viewed online at (http://josh.github.com/wysihat/).</p>
+
+<h3>Examples</h3>
+
+<p>Several examples can be found under <code>examples/</code> to get you started.</p>
+
+<h3>Downloading</h3>
+
+<p>Tagged releases will be posted on the GitHub downloads section (http://github.com/josh/wysihat/downloads).</p>
+
+<h3>Building from source</h3>
+
+<p>You can build the latest version of WysiHat from source by running
+<code>rake</code> the root directory. The generated file will be saved to
+<code>dist/wysihat.js</code>. Ruby and the Rake gem are only required to build
+the project from source. It is not required to run the code.</p>
+
+<h2>Contributing</h2>
+
+<p>Check out the WysiHat source with</p>
+
+<pre><code class="javascript">$ git clone git://github.com/josh/wysihat.git
+$ cd wysihat
+$ git submodule init
+$ git submodule update
+</code></pre>
+
+<p>GitHub pull requests are welcome.</p>
+
+<h2>License</h2>
+
+<p>WysiHat is released under the MIT license.</p>
+</div> <!-- .section -->
+
+
+      </div> <!-- #main -->
+            
+    </div> <!-- #page -->
+
+</body>
+</html>
